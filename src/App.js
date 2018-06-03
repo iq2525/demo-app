@@ -1,28 +1,52 @@
+// @flow
+
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Button from "./Button";
+import { Navbar, Grid, Jumbotron, Button } from "react-bootstrap";
 
 class App extends Component {
   render() {
+    const numberTest: number = 123;
+
     return (
       <section>
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
+        <div className="unicorn-details">
+          <div>Number test {numberTest}</div>
           <div>
             <img
               alt="unicorn svg test"
               src={process.env.PUBLIC_URL + "/unicorn.svg"}
             />
           </div>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
         </div>
-        <Button />
+
+        <div>
+          <Navbar inverse fixedTop>
+            <Grid>
+              <Navbar.Header>
+                <Navbar.Brand>
+                  <a href="/">React App</a>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+              </Navbar.Header>
+            </Grid>
+          </Navbar>
+          <Jumbotron>
+            <Grid>
+              <h1>Welcome to React</h1>
+              <p>
+                <Button
+                  bsStyle="success"
+                  bsSize="large"
+                  href="http://react-bootstrap.github.io/components.html"
+                  target="_blank"
+                >
+                  View React Bootstrap Docs
+                </Button>
+              </p>
+            </Grid>
+          </Jumbotron>
+        </div>
       </section>
     );
   }
