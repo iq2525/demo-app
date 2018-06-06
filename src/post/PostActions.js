@@ -1,8 +1,9 @@
 // @flow
 import React from "react";
+import "./Post.css";
 
 const PostActions = () => (
-  <div>
+  <div className="post--actions">
     <h2>Love | Comment</h2>
   </div>
 );

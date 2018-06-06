@@ -1,8 +1,9 @@
 // @flow
 import React from "react";
+import "./Post.css";
 
 const PostComments = () => (
-  <div>
+  <div className="post--comments">
     <h2>Comments Test</h2>
   </div>
 );

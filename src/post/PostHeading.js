@@ -1,8 +1,9 @@
 // @flow
 import React from "react";
+import "./Post.css";
 
 const PostHeading = () => (
-  <div>
+  <div className="post--heading">
     <h2>Heading Test 2</h2>
   </div>
 );

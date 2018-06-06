@@ -1,0 +1,18 @@
+@import "styles/_colors.scss"; // assuming a styles directory under src/
+
+.post {
+  background: red;
+}
+
+.post--heading {
+  color: blue;
+}
+
+.post--actions {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.post--comments {
+  background: pink;
+}
